@@ -2,12 +2,10 @@
 
 name: CI
 
-# 控制操作何时运行，在推送事件上触发工作流，但仅针对主分支
 on:
   push:
     branches: [ main ]
 
-# 工作流运行由一个或多个可以按顺序或并行运行的作业组成
 jobs:
   build:
     runs-on: ubuntu-latest
